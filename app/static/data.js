@@ -1,4 +1,4 @@
-var operatorsInfo = {
+var operatorInfo = {
     mts: [
         "010 — Вызов пожарной охраны и спасателей",
         "020 — Вызов милиции",
