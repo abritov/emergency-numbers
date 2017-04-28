@@ -1,7 +1,6 @@
 exports.mainPageLoaded = function() {
     console.log("Hello world!");
 };
-exports.operatorBtnClicked = function(e) {
-    console.log("clicked!");
+exports.tapOperator = function(e) {
     console.log(e.view.name);
 };
