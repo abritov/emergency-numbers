@@ -8,3 +8,9 @@ StackLayout > Label {
     height: 28em;
     /*background-color: #024a56; */
 }
+
+.call-btn {
+    font-size: 30em;
+    height: 50em;
+    horizontal-align: center;
+}
