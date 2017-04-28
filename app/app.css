@@ -2,7 +2,7 @@
 /*@import "nativescript-theme-core/css/core.light.css";*/
 
 /* Your CSS goes here */
-.operator-name {
+StackLayout > Label {
     margin-top: 10;
     margin-left: 20;
     height: 28em;

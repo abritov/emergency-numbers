@@ -1,12 +1,12 @@
 <Page loaded="loaded">
   <ActionBar title="Телефоны экстренных служб" class="action-bar"></ActionBar>
   <StackLayout>
-    <Label class="operator-name" name="mts" text="Mts" tap="tapOperator"/>
-    <Label class="operator-name" name="megafon" text="Megafon" tap="tapOperator"/>
-    <Label class="operator-name" name="beeline" text="Beeline" tap="tapOperator"/>
-    <Label class="operator-name" name="skylink" text="SkyLink" tap="tapOperator"/>
-    <Label class="operator-name" name="tele2" text="Tele2" tap="tapOperator"/>
-    <Label class="operator-name" name="utel" text="U-tel" tap="tapOperator"/>
-    <Label class="operator-name" name="motiv" text="Мотив" tap="tapOperator"/>
+    <Label name="mts" text="Mts" tap="tapOperator"/>
+    <Label name="megafon" text="Megafon" tap="tapOperator"/>
+    <Label name="beeline" text="Beeline" tap="tapOperator"/>
+    <Label name="skylink" text="SkyLink" tap="tapOperator"/>
+    <Label name="tele2" text="Tele2" tap="tapOperator"/>
+    <Label name="utel" text="U-tel" tap="tapOperator"/>
+    <Label name="motiv" text="Мотив" tap="tapOperator"/>
   </StackLayout>
 </Page>
