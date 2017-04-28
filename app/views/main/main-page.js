@@ -1,4 +1,4 @@
-exports.mainPageLoaded = function() {
+exports.loaded = function() {
     console.log("Hello world!");
 };
 exports.tapOperator = function(e) {
