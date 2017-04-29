@@ -1,3 +1,4 @@
+var frameModule = require("ui/frame");
 var NumberListModel = require("../../models/list");
 var operatorInfoModel = new NumberListModel();
 
@@ -7,4 +8,9 @@ exports.loaded = function(args) {
     var context = page.navigationContext;
     operatorInfoModel.switchTo(context.operatorName);
     page.bindingContext = operatorInfoModel;
+};
+
+exports.tapBackToMain = function() {
+    var topmost = frameModule.topmost();
+    topmost.navigate("views/main/main-page");
 };
