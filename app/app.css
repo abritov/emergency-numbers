@@ -16,6 +16,13 @@ StackLayout > Label {
     horizontal-align: center;
 }
 
+.call-active {
+    font-size: 30em;
+    height: 50em;
+    horizontal-align: center;
+    color: green;
+}
+
 .pressed {
     font: bold italic serif;
 }
