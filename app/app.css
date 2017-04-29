@@ -6,6 +6,7 @@ StackLayout > Label {
     margin-top: 10;
     margin-left: 20;
     height: 28em;
+    font-size: 15vw;
     /*background-color: #024a56; */
 }
 
