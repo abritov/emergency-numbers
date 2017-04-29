@@ -2,7 +2,7 @@
   <ActionBar title="Телефоны экстренных служб" class="action-bar"></ActionBar>
   <StackLayout>
     <Label class="h3" text="Назад к выбору оператора" tap="tapBackToMain"/>
-    <ListView items="{{ listNumbers }}" row="1" colSpan="2"/>
+    <ListView items="{{ listNumbers }}" itemTap="listViewItemTap" row="1" colSpan="2"/>
     <Label class="call-btn" text="Вызов"/>
   </StackLayout>
 </Page>

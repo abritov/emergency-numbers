@@ -15,3 +15,7 @@ StackLayout > Label {
     height: 50em;
     horizontal-align: center;
 }
+
+.pressed {
+    font: bold italic serif;
+}
