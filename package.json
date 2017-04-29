@@ -4,14 +4,15 @@
   "readme": "NativeScript Application",
   "repository": "<fill-your-repository-here>",
   "nativescript": {
-    "id": "org.nativescript.emergencynumbers",
+    "id": "org.int09h.emergencynumbers",
     "tns-android": {
       "version": "2.5.0"
     }
   },
   "dependencies": {
     "nativescript-theme-core": "~1.0.2",
-    "tns-core-modules": "2.5.0"
+    "tns-core-modules": "2.5.0",
+    "tns-core-modules-snapshot": "2.5.0-5.5.372.32"
   },
   "devDependencies": {
     "babel-traverse": "6.24.1",

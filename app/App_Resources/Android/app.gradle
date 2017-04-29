@@ -8,7 +8,7 @@
 android {  
   defaultConfig {  
     generatedDensities = []
-    applicationId = "org.nativescript.emergencynumbers" 
+    applicationId = "org.int09h.emergencynumbers" 
     
     //override supported platforms
     // ndk {
