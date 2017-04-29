@@ -12,5 +12,9 @@ exports.loaded = function(args) {
 
 exports.tapBackToMain = function() {
     var topmost = frameModule.topmost();
-    topmost.navigate("views/main/main-page");
+    var viewSetup = {
+        moduleName: "views/main/main-page",
+        context: { resetOperator: true }
+    };
+    topmost.navigate(viewSetup);
 };
