@@ -11,6 +11,10 @@ exports.loaded = function(args) {
     var context = page.navigationContext;
     operatorInfoModel.switchTo(context.operatorName);
     page.bindingContext = operatorInfoModel;
+    if (pressedNumber !== undefined) {
+        pressedNumber.className = "";
+        pressedNumber = undefined;
+    }
 };
 
 exports.tapCall = function() {
@@ -20,6 +24,8 @@ exports.tapCall = function() {
         dial.setData(Uri.parse("tel:" + number));
         console.log("Call to " + number);
         application.android.foregroundActivity.startActivity(dial);
+        pressedNumber.className = "";
+        pressedNumber = undefined;
     }
 };
 
