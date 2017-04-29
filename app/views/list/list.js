@@ -1,5 +1,8 @@
 var frameModule = require("ui/frame");
 var NumberListModel = require("../../models/list");
+var application = require("application");
+var Intent = android.content.Intent;
+var Uri = android.net.Uri;
 var operatorInfoModel = new NumberListModel();
 var pressedNumber;
 
@@ -8,6 +11,16 @@ exports.loaded = function(args) {
     var context = page.navigationContext;
     operatorInfoModel.switchTo(context.operatorName);
     page.bindingContext = operatorInfoModel;
+};
+
+exports.tapCall = function() {
+    if (pressedNumber !== undefined) {
+        var number = pressedNumber.text.replace(/\D/g, "");
+        var dial = new Intent(Intent.ACTION_DIAL);
+        dial.setData(Uri.parse("tel:" + number));
+        console.log("Call to " + number);
+        application.android.foregroundActivity.startActivity(dial);
+    }
 };
 
 exports.listViewItemTap = function(e) {
